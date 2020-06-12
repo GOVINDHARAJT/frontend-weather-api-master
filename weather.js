@@ -16,8 +16,8 @@ $("#btn").click(function(){
             document.getElementById("showDayAndTime").innerHTML = day + ", " + hh + ":" + mm + ":" + ss;
             document.getElementById("showWeather").innerHTML=data.weather[0].main + ", "+data.weather[0].description;
             var icon="http://openweathermap.org/img/w/" +data.weather[0].icon + ".png";
-            document.getElementById("showTemperature").innerHTML=data.main.temp+" &deg;C";	
-            document.getElementById("icon").src = icon;	
+            document.getElementById("icon").src = icon;
+            document.getElementById("showTemperature").innerHTML=data.main.temp+" &deg;C";		
         }	
     });	
 });
